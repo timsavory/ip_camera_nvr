@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  nvr:
+    build: ./
+    container_name: nvr
+    restart: unless-stopped
+    volumes:
+      - /home/tim/Projects/camera_nvr:/config
+      - /usr/share/hassio/media/nvr:/clips

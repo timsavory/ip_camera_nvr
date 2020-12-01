@@ -1,0 +1,20 @@
+# ip camera url
+input: rtmp://192.168.1.151/bcs/channel0_sub.bcs?channel=0&stream=0&user=admin
+
+# rtsp or rtmp protocol
+protocol: rtmp
+
+# length of each recording in seconds
+segment_time: 900 
+
+# number of days to save recordings for
+saving_period: 3 
+
+# interval for monitoring the recording process
+monitor_interval: 5
+
+# Restart threshold in seconds
+# if file size is the same after this time, process will be restarted
+restart_threshold: 30
+
+
